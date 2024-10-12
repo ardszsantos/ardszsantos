@@ -11,7 +11,7 @@
   <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ardszsantos&&theme=tokyonight" alt="Alexandre Rodrigues streak stats" />
 </div>
 
-<br/>
+<br/> teste, sem internet 
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
