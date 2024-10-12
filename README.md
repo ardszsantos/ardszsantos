@@ -2,7 +2,7 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Sarala&size=58&pause=100&color=FFFF&center=true&vCenter=true&random=false&width=1000&height=100&lines=Hi%2C+I'm+Alexandre+Rodrigues.;+_)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Sarala&size=58&pause=100&color=FFFF&center=true&vCenter=true&random=false&width=1000&height=100&lines=Hi%2C+I'm+Alexandre+Rodrigues.;+Fullstack Developer_)](https://git.io/typing-svg)
 <br/>
 
 <div align="center" >  
