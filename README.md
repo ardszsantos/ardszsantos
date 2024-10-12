@@ -5,10 +5,10 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Sarala&size=58&pause=100&color=FFFF&center=true&vCenter=true&random=false&width=1000&height=100&lines=Hi%2C+I'm+Alexandre+Rodrigues.;+_)](https://git.io/typing-svg)
 <br/>
 
-<div align="center" >  
+<div align="left" >  
   
   
-  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ardszsantos&&theme=tokyonight" alt="Alexandre Rodrigues streak stats" />
+  <img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=ardszsantos&&theme=tokyonight" alt="Alexandre Rodrigues streak stats" />
 </div>
 
 <br/>
