@@ -5,3 +5,6 @@
 <img src="https://raw.githubusercontent.com/ardszsantos/ardszsantos/output/snake.svg" alt="Snake animation" />
 
 ###
+
+
+Curretnly learning about ERP
