@@ -1,4 +1,4 @@
-<h1 align="center">Golang 🐻</h1>
+<h1 align="center"></h1>
 
 ###
 
