@@ -9,4 +9,6 @@ i really cannot understand why commits outside of the main branch dont count as 
 
 
 13 commits today but i still developing the component, it aint getting merged soon bruh............ please fix this
+
+ok bye deleting it all 
 ###
