@@ -1,8 +1,13 @@
-<h1 align="center"></h1>
+# Hi there, I'm ardszsantos! 👋
 
-###
+Welcome to my GitHub profile! 
 
-<img src="https://raw.githubusercontent.com/ardszsantos/ardszsantos/output/snake.svg" alt="Snake animation" />
+## About Me
 
+- 🌱 Consistency is key.
 
-###
+## Connect with Me
+
+- [Personal Website](https://portifolio-senai.vercel.app/)
+
+Thank you for visiting my profile! Have a great day! 😊
