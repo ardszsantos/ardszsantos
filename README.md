@@ -11,4 +11,3 @@ Welcome to my GitHub profile!
 - [Personal Website](https://portifolio-senai.vercel.app/)
 
 Thank you for visiting my profile! Have a great day! 😊
-.
