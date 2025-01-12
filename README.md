@@ -11,6 +11,3 @@ Welcome to my GitHub profile!
 - [Personal Website](https://portifolio-senai.vercel.app/)
 
 
-
-
-~
