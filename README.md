@@ -1,4 +1,4 @@
-# Hi there, I'm ardszsantos! 👋
+# Hi! 👋
 
 Welcome to my GitHub profile! 
 
