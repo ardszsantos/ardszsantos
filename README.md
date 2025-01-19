@@ -1,6 +1,6 @@
 # Hi! 👋
 
-Welcome to my profile top top
+Welcome to my profile
 
 ## About Me
 
