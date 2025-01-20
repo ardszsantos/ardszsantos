@@ -1,6 +1,4 @@
-# Hi! 👋
-
-Welcome to my profile
+# Hi! Welcome to my profile 👋
 
 ## [SETUP]
 # Currently running openSUSE as my main setup and Hyprland as my side setup.
