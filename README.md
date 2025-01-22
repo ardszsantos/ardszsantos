@@ -14,3 +14,4 @@ Currently running openSUSE as my main setup and Hyprland as my side setup.
 - [Personal Website](https://portifolio-senai.vercel.app/)
 
 
+![GitHub Snake Animation](https://github.com/ardszsantos/ardszsantos/blob/output/dist/snake.svg)
