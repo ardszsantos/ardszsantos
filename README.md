@@ -2,7 +2,7 @@
 (please someone buy me a new gpu, my old 1060 is diying 😬😬😬😬)
  
  [Info about my setup]
-Currently running openSUSE as my main setup and Hyprland as my side setup.
+Currently running openSUSE as my main setup and Arch/hyprland as my side setup.
 - Hyprland Config: https://github.com/prasanthrangan/hyprdots
 ##
 
