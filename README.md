@@ -1,5 +1,5 @@
 ## Hi! Welcome to my profile 👋
-(please someone buy me a new gpu, my old 1060 is diying 😬😬😬😬)
+(please someone buy me a new gpu, my old 1060 is diying)
  
  [Info about my setup]
 Currently running openSUSE as my main setup and Arch/hyprland as my side setup.
