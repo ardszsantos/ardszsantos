@@ -11,7 +11,7 @@ Currently running openSUSE as my main setup and Arch/hyprland as my side setup.
 - I need a new gpu
 - like seriously
 - cant use my pc
-
+- hmu if youre selling a gpu pls
 
 ## Connect with Me
 
