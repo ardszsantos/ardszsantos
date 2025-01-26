@@ -8,6 +8,7 @@ Currently running openSUSE as my main setup and Arch/hyprland as my side setup.
 ## About Me
 
 - 🌱 Consistency is key.
+- I need a new gpu
 
 ## Connect with Me
 
