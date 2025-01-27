@@ -21,8 +21,6 @@
 
 
 ## 📊 **GitHub Stats**
-(You can add GitHub stats using a service like [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats). Example below:)
+
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ardszsantos&show_icons=true&theme=radical)
 
-## 🐍 **Snake Eating My Contributions**
-![Snake animation](https://raw.githubusercontent.com/ardszsantos/ardszsantos/output/snake.svg)
