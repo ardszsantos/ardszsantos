@@ -10,31 +10,39 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
       - name: Generate frames
         run: |
-          frames=(
-"   __
+          mkdir frames
+          cat <<EOF > frame1.txt
+   __
  (    )
 (      )
- (____)"
-"     __
+ (____)
+EOF
+          cat <<EOF > frame2.txt
+     __
    (    )
   (      )
-   (____)"
-"  __
+   (____)
+EOF
+          cat <<EOF > frame3.txt
+  __
 (    )
 (      )
- (____)"
-"__
+ (____)
+EOF
+          cat <<EOF > frame4.txt
+__
 (    )
 (      )
-(____)"
-          )
-          mkdir frames
+(____)
+EOF
           i=0
-          for frame in "${frames[@]}"; do
-            convert -background white -fill black -font Courier -size 200x100 label:"$frame" frames/frame_$i.png
+          for f in frame1.txt frame2.txt frame3.txt frame4.txt; do
+            convert -background white -fill black -font Courier -size 200x100 label:"$(cat $f)" frames/frame_$i.png
             ((i++))
           done
       - name: Create potato.gif
