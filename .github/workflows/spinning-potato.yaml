@@ -1,56 +1,38 @@
-name: Spinning Potato
+name: Spin Potato Animation
 on:
-  push:
-    branches: [main]
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "*/5 * * * *"  # Update every 5 minutes
+  workflow_dispatch:
+
 jobs:
-  build:
+  animate-potato:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install ImageMagick
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Rotate Potato
         run: |
-          sudo apt-get update
-          sudo apt-get install -y imagemagick
-      - name: Generate frames
-        run: |
-          mkdir frames
-          cat <<EOF > frame1.txt
-   __
- (    )
-(      )
- (____)
-EOF
-          cat <<EOF > frame2.txt
-     __
-   (    )
-  (      )
-   (____)
-EOF
-          cat <<EOF > frame3.txt
-  __
-(    )
-(      )
- (____)
-EOF
-          cat <<EOF > frame4.txt
-__
-(    )
-(      )
-(____)
-EOF
-          i=0
-          for f in frame1.txt frame2.txt frame3.txt frame4.txt; do
-            convert -background white -fill black -font Courier -size 200x100 label:"$(cat $f)" frames/frame_$i.png
-            ((i++))
-          done
-      - name: Create potato.gif
-        run: convert -delay 50 -loop 0 frames/*.png potato.gif
-      - name: Commit animation
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add potato.gif
-          git commit -m "Update Potato Animation" || echo "No changes to commit"
-          git push
+          # Get current frame
+          if [ -f .github/potato-frames/current ]; then
+            CURRENT_FRAME=$(cat .github/potato-frames/current)
+            NEW_FRAME=$(( (CURRENT_FRAME % 8) + 1 ))
+          else
+            NEW_FRAME=1
+          fi
+
+          # Save new frame number
+          echo $NEW_FRAME > .github/potato-frames/current
+          
+          # Update README
+          FRAME_CONTENT=$(cat .github/potato-frames/frame$NEW_FRAME.txt)
+          awk -v content="$FRAME_CONTENT" \
+            '/<!-- POTATO START -->/{p=1; print; print content; next} \
+             /<!-- POTATO END -->/{p=0} \
+             !p' README.md > temp.md && mv temp.md README.md
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "🥔 Spin potato frame $NEW_FRAME"
+          file_pattern: README.md .github/potato-frames/current
