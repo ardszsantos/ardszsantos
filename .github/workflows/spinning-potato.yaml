@@ -1,7 +1,7 @@
 name: Spin That Potato!
 on:
   schedule:
-    - cron: "*/7 * * * *"  # Runs every 7 minutes
+    - cron: "*/7 * * * *"  # 7-min intervals (safer rate limit)
   workflow_dispatch:
 
 jobs:
@@ -10,28 +10,95 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Rotate Spud
+      - name: Create directories and frames
         run: |
-          # Which file we use to track the current frame
-          FRAME_FILE=".github/potato-frames/current"
-          
-          # If the file doesn't exist, start at 0
-          if [ -f "$FRAME_FILE" ]; then
-            CURRENT=$(cat "$FRAME_FILE")
-          else
-            CURRENT=0
+          mkdir -p .github/potato-frames
+          if [ ! -f .github/potato-frames/current ]; then
+            echo "0" > .github/potato-frames/current
           fi
 
-          # Move to the next frame (adjust 4 if you have more frames)
-          NEW=$(( (CURRENT % 4) + 1 ))
+          # Frame 1
+          echo ' .-~~^~~-.' > .github/potato-frames/frame1.txt
+          echo ' ( )' >> .github/potato-frames/frame1.txt
+          echo ' > <' >> .github/potato-frames/frame1.txt
+          echo "'.___...__.'" >> .github/potato-frames/frame1.txt
+          echo ' ╲ ╱' >> .github/potato-frames/frame1.txt
+          echo ' ╲ ╱' >> .github/potato-frames/frame1.txt
+          echo ' ⌄ ⌄' >> .github/potato-frames/frame1.txt
+
+          # Frame 2
+          echo ' .-~~^~~-.' > .github/potato-frames/frame2.txt
+          echo ' ( ╱ )' >> .github/potato-frames/frame2.txt
+          echo ' > \\ <' >> .github/potato-frames/frame2.txt
+          echo "'.___...__.'" >> .github/potato-frames/frame2.txt
+          echo ' ╲ ╱' >> .github/potato-frames/frame2.txt
+          echo ' ╲ ╱' >> .github/potato-frames/frame2.txt
+          echo ' ⌄' >> .github/potato-frames/frame2.txt
+
+          # Frame 3
+          echo ' .-~~^~~-.' > .github/potato-frames/frame3.txt
+          echo ' ( ⌄ )' >> .github/potato-frames/frame3.txt
+          echo ' > ╱╲ <' >> .github/potato-frames/frame3.txt
+          echo "'.___...__.'" >> .github/potato-frames/frame3.txt
+          echo ' ╲╱' >> .github/potato-frames/frame3.txt
+          echo ' ╳' >> .github/potato-frames/frame3.txt
+          echo ' ╱ ╲' >> .github/potato-frames/frame3.txt
+
+          # Frame 4
+          echo ' .-~~^~~-.' > .github/potato-frames/frame4.txt
+          echo ' ( )' >> .github/potato-frames/frame4.txt
+          echo ' > ╲╱ <' >> .github/potato-frames/frame4.txt
+          echo "'.___...__.'" >> .github/potato-frames/frame4.txt
+          echo ' ╱ ╲' >> .github/potato-frames/frame4.txt
+          echo ' ╱ ╲' >> .github/potato-frames/frame4.txt
+          echo ' ⌄ ⌄' >> .github/potato-frames/frame4.txt
+
+          # Frame 5
+          echo ' .-~~^~~-.' > .github/potato-frames/frame5.txt
+          echo ' ( ⌄ )' >> .github/potato-frames/frame5.txt
+          echo ' > ╱ <' >> .github/potato-frames/frame5.txt
+          echo "'.___...__.'" >> .github/potato-frames/frame5.txt
+          echo ' ╱ ╲' >> .github/potato-frames/frame5.txt
+          echo ' ╱ ╲' >> .github/potato-frames/frame5.txt
+          echo ' ⌄ ⌄' >> .github/potato-frames/frame5.txt
+
+          # Frame 6
+          echo ' .-~~^~~-.' > .github/potato-frames/frame6.txt
+          echo ' ( )' >> .github/potato-frames/frame6.txt
+          echo ' > ╱ <' >> .github/potato-frames/frame6.txt
+          echo "'.___...__.'" >> .github/potato-frames/frame6.txt
+          echo ' ╱ ╲' >> .github/potato-frames/frame6.txt
+          echo ' ╱ ╲' >> .github/potato-frames/frame6.txt
+          echo ' ⌄ ⌄' >> .github/potato-frames/frame6.txt
+
+          # Frame 7
+          echo ' .-~~^~~-.' > .github/potato-frames/frame7.txt
+          echo ' ( )' >> .github/potato-frames/frame7.txt
+          echo '>╱ <' >> .github/potato-frames/frame7.txt
+          echo "'.___...__.'" >> .github/potato-frames/frame7.txt
+          echo ' ╱ ╲' >> .github/potato-frames/frame7.txt
+          echo ' ╱ ╲' >> .github/potato-frames/frame7.txt
+          echo '⌄ ⌄' >> .github/potato-frames/frame7.txt
+
+          # Frame 8
+          echo ' .-~~^~~-.' > .github/potato-frames/frame8.txt
+          echo ' ( )' >> .github/potato-frames/frame8.txt
+          echo ' >\ <' >> .github/potato-frames/frame8.txt
+          echo "'.___...__.'" >> .github/potato-frames/frame8.txt
+          echo ' ╲ ╱' >> .github/potato-frames/frame8.txt
+          echo ' ╲ ╱' >> .github/potato-frames/frame8.txt
+          echo ' ⌄ ⌄' >> .github/potato-frames/frame8.txt
+
+      - name: Rotate Spud
+        run: |
+          FRAME_FILE=".github/potato-frames/current"
+          [ -f "$FRAME_FILE" ] && CURRENT=$(cat $FRAME_FILE) || CURRENT=0
+          NEW=$(( (CURRENT % 8) + 1 ))
           echo "$NEW" > "$FRAME_FILE"
 
-          # Read the content of the chosen frame
           FRAME_CONTENT=$(cat ".github/potato-frames/frame${NEW}.txt")
 
-          # Replace the entire block between <!-- POTATO START --> and <!-- POTATO END -->
-          # The -0777 flag slurps the whole file, making multiline replacements easier.
-          perl -i -0777 -pe "s/(<!-- POTATO START -->)\n?.*?\n?(<!-- POTATO END -->)/\$1\\n\\\`\\\`\\\`\\n${FRAME_CONTENT}\\n\\\`\\\`\\\`\\n\$2/s" README.md
+          perl -i -pe 'BEGIN{undef $/;} s/<!-- POTATO START -->.*<!-- POTATO END -->/<!-- POTATO START -->\n```\n$ENV{FRAME_CONTENT}\n```\n<!-- POTATO END -->/smg' README.md
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
