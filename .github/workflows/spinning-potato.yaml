@@ -1,7 +1,7 @@
 name: Spin That Potato!
 on:
   schedule:
-    - cron: "*/7 * * * *"  # 7-min intervals (safer rate limit)
+    - cron: "*/7 * * * *"  # Runs every 7 minutes
   workflow_dispatch:
 
 jobs:
@@ -9,18 +9,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Rotate Spud
         run: |
-          # Track frame state
+          # Which file we use to track the current frame
           FRAME_FILE=".github/potato-frames/current"
-          [ -f "$FRAME_FILE" ] && CURRENT=$(cat $FRAME_FILE) || CURRENT=0
-          NEW=$(( (CURRENT % 8) + 1 ))
-          echo $NEW > $FRAME_FILE
           
-          # Update README
-          FRAME_CONTENT=$(cat .github/potato-frames/frame$NEW.txt)
-          perl -i -pe 'BEGIN{undef $/;} s/<!-- POTATO START -->.*<!-- POTATO END -->/<!-- POTATO START -->\n```\n$ENV{FRAME_CONTENT}\n```\n<!-- POTATO END -->/smg' README.md
+          # If the file doesn't exist, start at 0
+          if [ -f "$FRAME_FILE" ]; then
+            CURRENT=$(cat "$FRAME_FILE")
+          else
+            CURRENT=0
+          fi
+
+          # Move to the next frame (adjust 4 if you have more frames)
+          NEW=$(( (CURRENT % 4) + 1 ))
+          echo "$NEW" > "$FRAME_FILE"
+
+          # Read the content of the chosen frame
+          FRAME_CONTENT=$(cat ".github/potato-frames/frame${NEW}.txt")
+
+          # Replace the entire block between <!-- POTATO START --> and <!-- POTATO END -->
+          # The -0777 flag slurps the whole file, making multiline replacements easier.
+          perl -i -0777 -pe "s/(<!-- POTATO START -->)\n?.*?\n?(<!-- POTATO END -->)/\$1\\n\\\`\\\`\\\`\\n${FRAME_CONTENT}\\n\\\`\\\`\\\`\\n\$2/s" README.md
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
