@@ -1,38 +1,28 @@
-name: Spin Potato Animation
+name: Spin That Potato!
 on:
   schedule:
-    - cron: "*/5 * * * *"  # Update every 5 minutes
+    - cron: "*/7 * * * *"  # 7-min intervals (safer rate limit)
   workflow_dispatch:
 
 jobs:
-  animate-potato:
+  animate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Rotate Potato
+      - uses: actions/checkout@v4
+      
+      - name: Rotate Spud
         run: |
-          # Get current frame
-          if [ -f .github/potato-frames/current ]; then
-            CURRENT_FRAME=$(cat .github/potato-frames/current)
-            NEW_FRAME=$(( (CURRENT_FRAME % 8) + 1 ))
-          else
-            NEW_FRAME=1
-          fi
-
-          # Save new frame number
-          echo $NEW_FRAME > .github/potato-frames/current
+          # Track frame state
+          FRAME_FILE=".github/potato-frames/current"
+          [ -f "$FRAME_FILE" ] && CURRENT=$(cat $FRAME_FILE) || CURRENT=0
+          NEW=$(( (CURRENT % 8) + 1 ))
+          echo $NEW > $FRAME_FILE
           
           # Update README
-          FRAME_CONTENT=$(cat .github/potato-frames/frame$NEW_FRAME.txt)
-          awk -v content="$FRAME_CONTENT" \
-            '/<!-- POTATO START -->/{p=1; print; print content; next} \
-             /<!-- POTATO END -->/{p=0} \
-             !p' README.md > temp.md && mv temp.md README.md
+          FRAME_CONTENT=$(cat .github/potato-frames/frame$NEW.txt)
+          perl -i -pe 'BEGIN{undef $/;} s/<!-- POTATO START -->.*<!-- POTATO END -->/<!-- POTATO START -->\n```\n$ENV{FRAME_CONTENT}\n```\n<!-- POTATO END -->/smg' README.md
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "🥔 Spin potato frame $NEW_FRAME"
-          file_pattern: README.md .github/potato-frames/current
+          commit_message: "🥔 Potato Rotation Frame $NEW"
+          branch: main
