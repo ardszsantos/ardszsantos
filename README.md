@@ -15,4 +15,5 @@
 - [Portfolio](https://portifolio-senai.vercel.app/)
 
 ## 
-🥔
+![Spinning Potato](./potato.gif)
+
