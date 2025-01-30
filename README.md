@@ -15,7 +15,4 @@
 - [Portfolio](https://portifolio-senai.vercel.app/)
 
 ## 
-<!-- POTATO START -->
-
-<!-- POTATO END -->
 
