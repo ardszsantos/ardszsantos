@@ -9,7 +9,7 @@
 
 ## 🌱 **Interests**
 - Linux enthusiast.
-- Currently looking for a new GPU.
+
 
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
