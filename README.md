@@ -9,7 +9,7 @@
 
 ## 🌱 **Interests**
 - Linux enthusiast.
-- - Bougth a 6650XT!! back to work soon... - 
+- Bougth a 6650XT!! back to work soon... 
   
 
 ## 🔗 **Links**
