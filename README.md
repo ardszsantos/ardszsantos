@@ -10,7 +10,8 @@
 ## 🌱 **Interests**
 - Linux enthusiast.
 - Bougth a 6650XT!! back to work soon...
-- it apparently arrives in 3 days..... 
+- it apparently arrives in 3 days.....
+- sorry for whoever is following my daily commits! must be depressing seeing daily readme commits 
   
 
 ## 🔗 **Links**
