@@ -7,11 +7,8 @@
 - **Side OS**: Arch Linux + Hyprland
   - Config: [hyprdots](https://github.com/prasanthrangan/hyprdots)
 
-## 🌱 **Interests**
-- Linux enthusiast.
-- gpu arriving tomorrow, maybe...
-- broke my laptop... gotta use my mums one now
-- cant wait to test my 6650 tho
+## 🌱 
+- Consistency is key
 
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
