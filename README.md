@@ -9,7 +9,7 @@
 
 ## 🌱 **Interests**
 - Linux enthusiast.
-
+- gpu arriving tomorrow, maybe...
 
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
