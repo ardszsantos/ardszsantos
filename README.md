@@ -10,6 +10,7 @@
 ## 🌱 **Interests**
 - Linux enthusiast.
 - gpu arriving tomorrow, maybe...
+- broke my laptop... gotta use my mums one now 
 
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
