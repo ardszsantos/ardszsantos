@@ -10,7 +10,8 @@
 ## 🌱 **Interests**
 - Linux enthusiast.
 - gpu arriving tomorrow, maybe...
-- broke my laptop... gotta use my mums one now 
+- broke my laptop... gotta use my mums one now
+- cant wait to test my 6650 tho
 
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
