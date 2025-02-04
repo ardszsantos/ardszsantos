@@ -9,7 +9,7 @@
 
 ## 🌱 
 - Consistency is key
-- -should have arrived today, but it diddint:(
+- should have arrived today, but it diddint:(
 
 
 ## 🔗 **Links**
