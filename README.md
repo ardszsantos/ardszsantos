@@ -9,6 +9,8 @@
 
 ## 🌱 
 - Consistency is key
+- -should have arrived today, but it diddint:(
+
 
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
