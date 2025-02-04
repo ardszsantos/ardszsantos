@@ -9,7 +9,7 @@
 
 ## 🌱 
 - Consistency is key
-- hope it arrives tmrw
+- cant wait to test terraforged
 
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
