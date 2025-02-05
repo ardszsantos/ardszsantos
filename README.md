@@ -13,4 +13,4 @@
 
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
-my gpu i mean
+
