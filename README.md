@@ -9,6 +9,7 @@
 
 ## 🌱 
 - Consistency is key
+- it did not fucking arrive.
  
 
 ## 🔗 **Links**
