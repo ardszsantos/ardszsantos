@@ -9,7 +9,7 @@
 
 ## 🌱 
 - Consistency is key
-- reclameaqui for pichau popping like crazy these last days... why im my turn???w
+fuck it ill thug it out
  
 
 ## 🔗 **Links**
