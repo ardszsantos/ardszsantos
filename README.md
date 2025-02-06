@@ -9,7 +9,7 @@
 
 ## 🌱 
 - Consistency is key
-- someone please kill me end my suffering
+- reclameaqui for pichau popping like crazy these last days... why im my turn???w
  
 
 ## 🔗 **Links**
