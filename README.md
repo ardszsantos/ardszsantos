@@ -9,7 +9,7 @@
 
 ## 🌱 
 - Consistency is key
-- it did not fucking arrive.
+- someone please kill me end my suffering
  
 
 ## 🔗 **Links**
