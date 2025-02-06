@@ -9,7 +9,7 @@
 
 ## 🌱 
 - Consistency is key
-fuck it ill thug it out
+
  
 
 ## 🔗 **Links**
