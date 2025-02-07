@@ -15,4 +15,3 @@
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
 
-never been so fucked in my life
