@@ -15,4 +15,4 @@
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
 
-honestly considering suicide
+not really but fuck pichau 
