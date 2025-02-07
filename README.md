@@ -15,4 +15,4 @@
 ## 🔗 **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
 
-not really but fuck pichau 
+never been so fucked in my life
