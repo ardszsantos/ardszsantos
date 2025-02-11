@@ -7,7 +7,7 @@
 - **Side OS**: Arch Linux + Hyprland
   - Config: [hyprdots](https://github.com/prasanthrangan/hyprdots)
 
-## 🌱 
+## 🌱 **
 - Consistency is key
 
  
