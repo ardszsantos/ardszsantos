@@ -8,7 +8,7 @@
   - Config: [hyprdots](https://github.com/prasanthrangan/hyprdots)
 
 ## 🌱 
-- Consistency is key
+- Consistency is key <br/>
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ardszsantos)](https://github.com/anuraghazra/github-readme-stats)
  
 
