@@ -9,8 +9,7 @@
 
 ## 🌱 
 - Consistency is key <br/>
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ardszsantos)](https://github.com/anuraghazra/github-readme-stats)
- 
+- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=myusername&theme=tokyonight)
 
 ## 🔗 
 - [Portfolio](https://portifolio-senai.vercel.app/)
