@@ -6,7 +6,7 @@
 - **Main OS**: Arch Linux + Hyprland
   - Config: [hyprdots](https://github.com/prasanthrangan/hyprdots)
 
-## 🌱 **About me**
+## **About me**
 - Consistency is key <br/>
 
 ## 🔗 **Links**
