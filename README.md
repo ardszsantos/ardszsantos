@@ -4,7 +4,7 @@
 
 ## **Setup**
 - **Main OS**: Arch Linux + Hyprland
-  - Config: [hyprdots](https://github.com/prasanthrangan/hyprdots{:target="_blank"})
+  - Config: [hyprdots](https://github.com/prasanthrangan/hyprdots/{:target="_blank"})
 
 ## **About me**
 - Consistency is key <br/>
