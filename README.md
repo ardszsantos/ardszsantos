@@ -9,6 +9,6 @@
 ## **About me**
 - Consistency is key <br/>
 
-## 🔗 **Links**
+## **Links**
 - [Portfolio](https://portifolio-senai.vercel.app/)
 
