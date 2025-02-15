@@ -4,11 +4,11 @@
 
 ## **Setup**
 - **Main OS**: Arch Linux + Hyprland
-  - Config: [hyprdots](https://github.com/prasanthrangan/hyprdots)
+  - Config: [hyprdots](https://github.com/prasanthrangan/hyprdots){:target="_blank"}
 
 ## **About me**
 - Consistency is key <br/>
 
 ## **Links**
-- [Portfolio](https://portifolio-senai.vercel.app/)
+- [Portfolio](https://portifolio-senai.vercel.app/){:target="_blank"}
 
