@@ -6,4 +6,4 @@
 - **OS**: Arch/Hyprland [Config: [hyprdots](https://github.com/prasanthrangan/hyprdots/)]
 
 - [Portfolio](https://portifolio-senai.vercel.app/)
-..=
+..
