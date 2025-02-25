@@ -7,4 +7,4 @@
 
 - [Portfolio](https://portifolio-senai.vercel.app/)
 
-wtf brp
+wsp with contribs today
