@@ -7,4 +7,3 @@
 
 - [Portfolio](https://portifolio-senai.vercel.app/)
 
-wsp with contribs today
