@@ -6,4 +6,4 @@
 - **OS**: Arch/Hyprland [Config: [hyprdots](https://github.com/Hyde-project/hyde)]
 
 - [Portfolio](https://portifolio-senai.vercel.app/)
-noro
+
