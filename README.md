@@ -3,4 +3,4 @@
 
 
 
-- [Portfolio](https://portifolio-senai.vercel.app/)
+- Checkout my portfolio [Portfolio](https://portifolio-senai.vercel.app/)
