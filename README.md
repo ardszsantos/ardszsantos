@@ -2,4 +2,4 @@
 
 
 
-- Checkout my [Portfolio](https://portifolio-senai.vercel.app/)d
+- Checkout my [Portfolio](https://portifolio-senai.vercel.app/)
