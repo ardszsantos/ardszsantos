@@ -3,7 +3,7 @@
 
 
 ## My trophies
-[![trophies](https://github-profile-trophy.vercel.app/?username=ardszsantos&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophies](https://github-profile-trophy.vercel.app/?username=ardszsantos&theme=onedark&title=-Stars,-Reviews)](https://github.com/ryo-ma/github-profile-trophy)
 
 
 - Checkout my [Portfolio](https://portifolio-senai.vercel.app/)
