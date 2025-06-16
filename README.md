@@ -1,6 +1,6 @@
 [![Snake animation](https://raw.githubusercontent.com/ardszsantos/ardszsantos/output/snake.svg)](https://github.com/ardszsantos/ardszsantos)
 
-https://github-profile-trophy.vercel.app/?username=ardszsantos
+[![trophies](https://github-profile-trophy.vercel.app/?username=ardszsantos)](https://github.com/ryo-ma/github-profile-trophy)
 
 
 - Checkout my [Portfolio](https://portifolio-senai.vercel.app/)
