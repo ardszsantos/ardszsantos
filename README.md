@@ -4,7 +4,7 @@
 
 ## My trophies 
 [![trophies](https://github-profile-trophy.vercel.app/?username=ardszsantos&theme=onedark&title=-Stars,-Reviews)](https://github.com/ryo-ma/github-profile-trophy)
-<sub>please follow me... :(</sub>
+
 
 
 - Checkout my [Portfolio](https://portifolio-senai.vercel.app/)
