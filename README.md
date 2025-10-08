@@ -1,5 +1,5 @@
 [![Snake animation](https://raw.githubusercontent.com/ardszsantos/ardszsantos/output/snake.svg)](https://github.com/ardszsantos/ardszsantos)
-
+![](./profile-3d-contrib/profile-green-animate.svg)
 
 
 ## My trophies 
