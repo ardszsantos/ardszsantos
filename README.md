@@ -1,4 +1,4 @@
-![](./profile-3d-contrib/profile-night-green.svg)
+![contribGraph](./profile-3d-contrib/profile-night-green.svg)
 
 
 ## My trophies 
