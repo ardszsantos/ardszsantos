@@ -2,8 +2,7 @@
 
 
 ## My trophies 
-[![trophies](https://github-profile-trophy.vercel.app/?username=ardszsantos&theme=onedark&title=-Stars,-Reviews)](https://github.com/ryo-ma/github-profile-trophy)
-
+[![trophy](https://github-profile-trophy.vercel.app/?username=ardszsantos)](https://github.com/ryo-ma/github-profile-trophy)
 
 
 - Currently running Omarchy
